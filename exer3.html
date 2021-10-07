@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>표 만들기</title>
+    </head>
+    <body>
+        <h1>상품구성</h1>
+        <table>
+            <caption>선물용과 가정용 상품 구성</caption>
+            <colgroup><!--열을 묶어주는 태그 col, colgroup-->
+                <col style="background-color:#eee;">
+                <col>
+                <col style="width:150px;"> <!--또는 <col span="2" style="width:150px;" 해버리기-->
+                <col style="width:150px;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>용도</th>
+                    <th>중량</th>
+                    <th>개수</th>
+                    <th>가격</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="2">선물용</th> <!--td rowspan="n"은 그 열의 n개의 행을 묶어 버린다.-->
+                    <td>3kg</td>
+                    <td>11~16과</td>
+                    <td>35,000</td>
+                </tr>
+                <tr>
+                    <td>5kg</td>
+                    <td>18~26과</td>
+                    <td>52,000</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">가정용</th>
+                    <td>3kg</td>
+                    <td>11~16과</td>
+                    <td>30,000</td>
+                </tr>
+                <tr>
+                    <td>5kg</td>
+                    <td>18~26과</td>
+                    <td>47,000</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </body>
+</html>
