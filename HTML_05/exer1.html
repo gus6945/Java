@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>폼 삽입하기</title>
+    </head>
+    <body>
+        <h1>레드향 주문하기</h1>
+        <!--form 태그 : <form [속성="속성값"]>여러 form 요소</form>
+        속성에는 method(get, post), name, action, target
+        method는 사용자가 입력한 내용을 서버에 어떻게 넘길지 정함
+        get과 post가 있는데, get은 256~4096byte까지만 넘길 수 있고, 입력한 내용이 주소 표시줄에 남음. post는 제한도 없고, 입력 내용이 주소 표시줄에 남지도 않음
+        name은 자바스크립트로 폼을 제어할 대 사용할 form의 이름 지정
+        action은 태그 안의 내용을 처리할 서버 프로그램 지정
+        target은 action에서 지정한 스크립트 파일을 현재 창이 아닌 다른 위치에서 열도록 한다.
+        -->
+        <!--자동 완성 기능 autocomplete 속성-->
+        <!--form 요소를 그룹으로 묶은 fieldset, legend 태그-->
+        <!--fieldset [속성="속성값"] legend fieldset 태그 안에서 그룹 이름을 지정한다.-->
+        <form action="" autocomplete="off">
+            <fieldset>
+                <legend>상품 선택</legend>
+            </fieldset>
+            <fieldset>
+                <legend>배송 정보</legend>
+            </fieldset>
+            <label>아이디(6자 이상)<input type="text"></label>
+            <p></p>
+            <label for="user-id">아이디(6자 이상)</label>
+            <input type="text" id="user-id"> <!--label 태그와 input 태그를 사용할 때는 두가지 방법을 사용할 수 있다. 아래의 방법은 input 태그가 멀리 떨어져 있어도 둘 사이를 연결 가능하다.-->
+        </form>
+        <!--폼 요소에 레이블 붙이는 label 태그, input 태그와 함게 폼 요소를 입력할 수 있도록 함-->
+
+    </body>
+</html>
