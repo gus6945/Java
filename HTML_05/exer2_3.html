@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>사용자 입력을 위한 input tag</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>상품 선택</legend>
+                <ul>
+                    <li>
+                        <label><input type="checkbox" value="s_3">선물용 3kg</label>
+                        <input type="number" min="0" max="5">개 (최대 5개)
+                    </li>
+                    <li>
+                        <label><input type="checkbox" value="s_5">선물용 5kg</label>
+                        <input type="number" min="0" max="5">개 (최대 3개)
+                    </li> 
+                </ul>
+                <ul>
+                    <li>
+                        <label><input type="checkbox" value="h_3">가정용 3kg</label>
+                        <input type="range" min="0" max="5">개 (최대 5개)
+                    </li>
+                    <li>
+                        <label><input type="checkbox" value="h_5">가정용 5kg</label>
+                        <input type="range" min="0" max="3">개 (최대 3개)
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <h1>날짜 지정하기</h1>
+                <input type="date">
+                <input type="month">
+                <input type="week">
+            </fieldset>
+            <fieldset>
+                <h1>시간 입력</h1>
+                <input type="time">
+                <input type="datetime">
+                <input type="datetime-local">
+            </fieldset>
+            <fieldset>
+                <legend>전송, 리셋 버튼</legend>
+                <input type="submit" value="로그인">
+                <input type="reset" value="취소">
+            </fieldset>
+            <fieldset>
+                <legend>배송 정보</legend>
+                <ul>
+                    <li>
+                        <label for="user_name">이름</label>
+                        <input type="text" id="user_name">
+                    </li>
+                    <li>
+                        <label>배송 주소 <input type="text"></label>
+                    </li>
+                    <li><label>이메일 <input type="email"></label></li>
+                    <li><label>연락처 <input type="tel"></label></li>
+                    <li>
+                        <label for="want_date">배송 지정 (주문일로부터 최소 3일 이후)<br></label>
+                        <input type="date">
+                    </li>
+                </ul>
+            </fieldset>
+            <input type="submit" value="주문하기">
+            <input type="reset" value="취소하기">
+            <fieldset>
+                <label>아이디: <input type="text" id="user_id" size="10"></label>
+                <label>비밀번호: <input type="password" id="user_pw" size="10"></label>
+                <input type="image" src="images/login.png" alt="로그인">
+            </fieldset>
+            <input type="button" value="공지 창 열기" onclick="window.open('notice.html')">
+            <fieldset>
+                <legend>반품 정보</legend>
+                <p>만일 수령한 상품에 문제가 있다면 즉시 <b>반품 신청</b>해 주세요.<br>
+                반품 신청시 상품의 상태를 사진으로 첨부해 주세요.</p>
+            </fieldset>
+            <input type="file">
+            <fieldset>
+                <input type="hidden" value="사용자를 통한 직접 로그인">
+                <label>아이디: <input type="text" id="user_id" size="10"></label>
+                <label>비밀번호: <input type="password" id="user_pw" size="10"></label>
+                <input type="submit" value="로그인">
+            </fieldset>
+        </form>
+    </body>
+</html>
