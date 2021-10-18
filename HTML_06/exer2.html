@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>css기본 선택자 알아보기</title>
+        <style>
+            /*전체 요소에 스타일을 적용하는 전체 선택자 == *{} */
+            *{
+                margin: 0;
+            }
+            /*타입 선택자 == inner style sheet*/
+            p{
+                font-style: italic;
+            }
+            /*클래스 선택자 == .클래스명 {}, 클래스를 만든 후 span 태그를 이용해 적용, 기본형: <span class="클래스명"></span>*/
+            .accent{
+                border: 1px solid #000;
+                padding: 5px;
+            }
+            .bg{
+                background-color: aqua;
+            }
+            /*아이디 선택자 == #아이디명 {}, 특정 부분에 스타일을 한 번만 적용 가능*/
+            #container{
+                width: 500px; /*너비*/
+                margin: 10px auto; /*중앙 배치*/
+                padding: 10px; /*태두리와 내용 사이 여백*/
+                border: 1px solid #000 /*태두리 굵기, 색*/
+            }
+            /*그룹 선택자 == 선택자 1, 선택자 2 {}*/
+            h1, p{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><span class="bg accent">너였다면</span></h1>
+        <img src="images/cat.jpg">
+        <p>너였다면 어떨 것 같아 <span class=accent>이런 미친날들</span>이 니 하루가 되면 말야</p>
+        <div id="container">
+            <h1>레드향</h1>
+            <p>ㅁㄴㅇㄹ</p>
+        </div>
+    </body>
+</html>
